@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP LC2 - TP Integrador</title>
+    <link rel="shortcut icon" href="img/weather.ico" type="image/x-icon">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span>
+                <img src="./img/weather.ico" width="50" height="50" alt="">
+            </span>
+            <span>Clima App</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clima</a></li>
+                <li><a href="add-city.html">Agregar Ciudad</a></li>
+                <li class="current-page"><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <div>
+            <h2>Ayuda Clima App v.1.0</h2>
+            <p><strong>Esta App te permite consultar el clima de una ciudad en particular utilizando la API de <a
+                        target="_blank" href="https://openweathermap.org">OpenWheaterMap</a>.</strong></p>
+            <p><strong>Para poder consultar el clima, primero deberá <a href="add-city.html">Agregar una ciudad</a> y
+                    luego seleccionar la Ciudad en cuestión desde la página <a href="index.html">Clima</a>.</strong></p>
+        </div>
+        <div>
+            <section id="form-city-list">
+                <form action="#">
+                    <label for="text">Nombre:</label>
+                    <input type="text" id="name" name="name"> <br />
+                    <label for="text2">Email:</label>
+                    <input type="text2" id="Email" name="Email"> <br />
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea cols="50" rows="10"></textarea> <br />
+                    <button>Limpiar</button>  <button>Enviar</button>
+
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP LC2 - TP Integrador</title>
+    <link rel="shortcut icon" href="img/weather.ico" type="image/x-icon">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span>
+                <img src="./img/weather.ico" width="50" height="50" alt="">
+            </span>
+            <span>Clima App</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clima</a></li>
+                <li class="current-page"><a href="add-city.html">Agregar Ciudad</a></li>
+                <li><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>Agregar Ciudad</h2>
+        <section id="form-city-list">
+            <form action="#">
+                <div class="item-form">
+                    <label for="add-city-place"> <strong> Ingrese la ciudad a agregar:</strong>  </label>
+                    <input type="text" name="city" id="city" />
+                </div>
+                <div><button name="Agregar" id="button"> Agregar </button></div>
+            </form> 
+        </section>
+        <section id="section-weather-result">
+            <!-- Sección donde se debe mostrar el clima de la ciudad -->
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+</html>
