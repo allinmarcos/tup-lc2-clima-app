@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/weather.ico" type="image/x-icon">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/add-city.css">
 </head>
 
 <body>
@@ -31,11 +32,16 @@
         <h2>Agregar Ciudad</h2>
         <section id="form-city-list">
             <form action="#">
+
                 <div class="item-form">
                     <label for="add-city-place"> <strong> Ingrese la ciudad a agregar:</strong>  </label>
                     <input type="text" name="city-place" id="add-city-place" />
-                </div>
                 <div><button name="add" id="boton-agregar"> Agregar </button></div>
+
+                <p class="success">Ciudad agregada con éxito</p>
+                <p class="error">Error: La ciudad ingresada no se encuenta en la API o se produjo un error al consultar</p>
+                <p class="warning">La ciudad ingresada ya se encuentra almacenada</p>
+            </div>
             </form> 
         </section>
         <section id="section-weather-result">

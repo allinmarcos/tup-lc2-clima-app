@@ -7,6 +7,9 @@
 
 :root {
     /* Declaro variables CSS con colores principales */
+    --color-success: #28a745;
+    --color-warning: #ffc107;
+    --color-error: #dc3545;
     --color-theme: #00594c;
     --color-active: #5df2d6;
     --color-back-active: #04957d;
@@ -35,13 +38,17 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background-image: linear-gradient(to right, var(--color-theme),
+    var(--color-back-active));
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 nav>ul {
     display: flex;
     justify-content: space-between;
     justify-content: center;
+    
 }
 
 nav li {
@@ -56,12 +63,16 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var(--color-active);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 main {
@@ -103,7 +114,8 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var(--color-theme);
+    background-image: linear-gradient(to right, var(--color-theme),
+    var(--color-back-active));
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -118,6 +130,15 @@ footer p {
     main p {
         margin-bottom:  16px;
     }
+
+button {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--color-theme);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
     /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
     @media (min-width: 400px) {
