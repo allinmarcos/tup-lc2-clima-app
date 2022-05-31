@@ -1,0 +1,48 @@
+.help {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    padding: 13px 50px;
+}
+
+#boton-enviar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#boton-limpiar {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.help-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.help>p {
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    align-self: normal;
+}
+
+p.error {
+    background-color: var(--color-error);
+    width: 400px;
+    margin: 30px auto;
+    padding: 13px 50px;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+}

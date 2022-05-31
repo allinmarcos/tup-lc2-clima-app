@@ -35,16 +35,21 @@
                     luego seleccionar la Ciudad en cuestión desde la página <a href="index.html">Clima</a>.</strong></p>
         </div>
         <div>
-            <section id="form-city-list">
-                <form action="#">
+            <section class="help">
+                <form class="help-form" action="#">
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name"> <br />
                     <label for="Email">Email:</label>
                     <input type="email" id="Email" name="Email"> <br />
                     <label for="mensaje">Mensaje:</label>
                     <textarea cols="50" rows="10" name="area-de-texto" id="mensaje"></textarea><br />
-                    <button name="limpiar" id="boton-limpiar">Limpiar</button>  <button name="enviar" id="boton-enviar">Enviar</button>
-                </form>
+                    
+                    <div class="help-buttons">
+                    <button name="limpiar" id="boton-limpiar">Limpiar</button>
+                    <button name="enviar" id="boton-enviar">Enviar</button>
+                    </div> 
+                </form>  
+                <p class="error">Ingrese un Email válido</p>
             </section>
         </div>
     </main>
