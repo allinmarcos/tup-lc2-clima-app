@@ -114,12 +114,12 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background-image: linear-gradient(to right, var(--color-theme),
-    var(--color-back-active));
+    background: var(--color-gradient);
     width: 100%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    
 }
 
 footer p {
@@ -172,7 +172,7 @@ p {
         }
 
         footer {
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 }
