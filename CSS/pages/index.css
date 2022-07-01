@@ -9,16 +9,10 @@
     border-radius: 5px;
 }
 #boton-consultar {
-    padding: 8px;
     margin: 2px;
-    background-color: var(--color-theme);
-    color: white;
-    font-weight: 500;
     height: 35px;
     width: 85px;
     border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border: none;
 }
 

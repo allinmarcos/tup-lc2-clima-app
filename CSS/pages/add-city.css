@@ -14,44 +14,19 @@
     align-self: normal;
 }
 
-#boton-agregar {
-    padding: 8px;
-    border-radius: 10px;
-    background-color: var(--color-theme);
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;  
-}
-
-p.success {
-    
+#success { 
     background-color: var(--color-success);
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    padding: 25px;
-    margin: 20px;
-    text-align: center;
+}
+
+#add-city-error {   
     align-self: normal;
 }
 
-p.error {
-   
+#warning {   
+    background-color: var(--color-warning);     
+}
+
+#add-city-error {
     background-color: var(--color-error);
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    padding: 25px;
-    margin: 20px;
     text-align: center;
-    align-self: normal;
-}
-
-p.warning {
-    
-    background-color: var(--color-warning);
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    padding: 25px;
-    margin: 20px;
-    text-align: center;
-    align-self: normal;
 }

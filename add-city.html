@@ -9,6 +9,8 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/add-city.css">
+    <script src="./js/common.js" defer></script>
+    <script src="./js/pages/add-city.js" defer></script>
 </head>
 
 <body>
@@ -38,9 +40,9 @@
                     <input type="text" name="city-place" id="add-city-place" />
                 <div><button name="add" id="boton-agregar"> Agregar </button></div>
 
-                <p class="success">Ciudad agregada con éxito</p>
-                <p class="error">Error: La ciudad ingresada no se encuenta en la API o se produjo un error al consultar</p>
-                <p class="warning">La ciudad ingresada ya se encuentra almacenada</p>
+                <p class="message" id="success">Ciudad agregada con éxito</p>
+                <p class="message" id="add-city-error">Error: La ciudad ingresada no se encuenta en la API o se produjo un error al consultar</p>
+                <p class="message" id="warning">La ciudad ingresada ya se encuentra almacenada</p>
 
             </div>
             </form> 
