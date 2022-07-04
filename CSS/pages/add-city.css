@@ -16,17 +16,19 @@
 
 #success { 
     background-color: var(--color-success);
+    display: NONE;
 }
 
 #add-city-error {   
     align-self: normal;
+    background-color: var(--color-error);
+    text-align: center;
+    display: NONE;
 }
 
 #warning {   
-    background-color: var(--color-warning);     
+    background-color: var(--color-warning);
+    display: NONE;    
 }
 
-#add-city-error {
-    background-color: var(--color-error);
-    text-align: center;
-}
+
