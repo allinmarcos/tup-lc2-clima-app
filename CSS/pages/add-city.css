@@ -1,4 +1,3 @@
-
 .item-form {
     display: flex;
     flex-direction: column;
@@ -14,21 +13,23 @@
     align-self: normal;
 }
 
-#success { 
+.message.success { 
     background-color: var(--color-success);
-    display: NONE;
+    display: block;
 }
 
-#add-city-error {   
+.message.add-city-error {   
     align-self: normal;
     background-color: var(--color-error);
     text-align: center;
-    display: NONE;
+    display: block;
 }
 
-#warning {   
-    background-color: var(--color-warning);
-    display: NONE;    
+.message.warning {   
+    background-color: var(--color-warning);     
+    display: block;
 }
 
-
+.message {
+    display: none;
+}
