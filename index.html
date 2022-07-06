@@ -1,75 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <!DOCTYPE html>
-    <html lang="es">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TUP LC2 - TP Integrador</title>
-        <link rel="shortcut icon" href="img/weather.ico" type="image/x-icon">
-        <!-- Estilos CSS -->
-        <link rel="stylesheet" href="CSS/pages/index.css">
-        <link rel="stylesheet" href="CSS/common.css">
-        <script src="./js/common.js" defer></script>
-        <script src="./js/pages/index.js" defer></script>
-    </head>
-    
-    <body>
-        <header>
-            <h1>
-                <span>
-                    <img src="./img/weather.ico" width="50" height="50" alt="icon">
-                </span>
-                <span>Clima App</span>
-            </h1>
-            <nav>
-                <ul>
-                    <li class="current-page"><a href="#">Clima</a></li>
-                    <li><a href="add-city.html">Agregar Ciudad</a></li>
-                    <li><a href="help.html">Ayuda</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Contenido principal de la página -->
-        <main>
-            <h2>El Clima Ahora</h2>
-            <section id="form-city-list">
-                <!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
-                <form action="#">
-                    <div class="item-form">
-                        <select name="Seleccionar ciudad" id="seleccionable">
-                            <option value="Seleccionar ciudad" disabled selected>Seleccionar ciudad</option>
-                            <!-- <option value="ROSARIO">Rosario</option>
-                            <option value="RAFAELA">Rafaela</option> -->
-                        </select>
-                        <button name="consultar" id="boton-consultar"> Consultar </button>
-                    </div>
-                </form>
-            </section>
-            <section id="add-cities">
-                <p>Por favor añada ciudades primero</p>
-            </section>
-            <section id="section-weather-result">
-                <!-- Sección donde se debe mostrar el clima de la ciudad -->
-                <div class="card" id="card-1">
-                    <h3 class="city-name" id="city-name">Rosario</h3>
-                    <img class="icon-img" width="100" height="100" src="http://openweathermap.org/img/wn/01d@2x.png" />
-    
-                    <p><strong>Temperatura: <span id="temperature">13.76º</span></strong></p>
-                    <p><strong>Sensación térmica: <span id="sensation">12.91º</span></strong></p>
-                    <p><strong>Humedad: <span id="humidity">66%</span></strong></p>
-                    <p><strong>Velocidad del viento: <span class="wind">2.06km/h</span></strong></p>
-                    <p><strong>Presión: <span class="pressure">1024 P</span></strong></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP LC2 - TP Integrador</title>
+    <link rel="shortcut icon" href="img/weather.ico" type="image/x-icon">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="CSS/pages/index.css">
+    <link rel="stylesheet" href="CSS/common.css">
+    <script src="./js/common.js" defer></script>
+    <script src="./js/pages/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span>
+                <img src="./img/weather.ico" width="50" height="50" alt="icon">
+            </span>
+            <span>Clima App</span>
+        </h1>
+        <nav>
+            <ul>
+                <li class="current-page"><a href="#">Clima</a></li>
+                <li><a href="add-city.html">Agregar Ciudad</a></li>
+                <li><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>El Clima Ahora</h2>
+        <section id="form-city-list">
+            <!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
+            <form action="#">
+                <div class="item-form">
+                    <select name="Seleccionar ciudad" id="seleccionable">
+                        <option value="Seleccionar ciudad" disabled selected>Seleccionar ciudad</option>
+                    </select>
+                    <button name="consultar" id="boton-consultar"> Consultar </button>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <p>
-                Desarrollado con ♥ - LC2
-            </p>
-        </footer>
-    </body>
-    
-    </html>
+            </form>
+        </section>
+        <section id="add-cities">
+            <p>Por favor añada ciudades primero</p>
+        </section>
+        <section id="section-weather-result">
+            <!-- Sección donde se debe mostrar el clima de la ciudad -->
+            <div class="card" id="card-1">
+                <h3 class="city-name" id="city-name">Rosario</h3>
+                <img class="icon-img" id="weather-icon" width="100" height="100" src="http://openweathermap.org/img/wn/01d@2x.png" alt=""/>
+
+                <p><strong>Temperatura: <span id="temperature">13.76</span>º</strong></p>
+                <p><strong>Sensación térmica: <span id="sensation">12.91</span>º</strong></p>
+                <p><strong>Humedad: <span id="humidity">66</span>%</strong></p>
+                <p><strong>Velocidad del viento: <span id="wind">2.06</span>km/h</strong></p>
+                <p><strong>Presión: <span id="pressure">1024</span> P</strong></p>
+            </div>
+        </section>
+        <span class="loader display-none" id="loader"></span>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+</html>
