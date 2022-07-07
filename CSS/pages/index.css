@@ -30,3 +30,7 @@
     margin: 30px;
     padding: 10px;
 }
+
+.message#add-cities {
+    background-color: var(--color-warning);
+}

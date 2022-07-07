@@ -29,9 +29,11 @@ async function showCityDetails () {
   let card = document.getElementById('section-weather-result');
   card.classList.add('display-block');
   card.classList.remove('display-none');
+  console.log(res);
   hideLoader();
 }
 
+//IIFE Inmediatly Invoked Function Expresion //Como las funciones Lamda
 (function(){
   let cities = getCitiesFromLocalStorage();
   console.log(cities);
@@ -42,12 +44,13 @@ async function showCityDetails () {
     warning.classList.remove('display-none');
     card.classList.add('display-none');
     card.classList.remove('display-block');
+    let button = document.getElementById('boton-consultar');
+    button.disabled = true;
+
   } else {
     warning.classList.add('display-none');
     warning.classList.remove('display-block');
-    // card.classList.add('display-block');
-    // card.classList.remove('display-none');
-    card.classList.add('display-none');
+    card.classList.add('display-none'); //por las dudas
     setCitiesList(cities);
   }
 }
